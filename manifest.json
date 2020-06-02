@@ -1,0 +1,54 @@
+{
+    "manifest_version": 2,
+    "name": "URL Normalizer",
+    "version": "0.1",
+    "description": "Auto normalize dirty URL.",
+    "content_scripts": [{
+        "matches": ["https://www.amazon.co.jp/*"],
+        "js": ["normalize_amznjp.js"]
+    },
+    {
+        "matches": ["https://news.nicovideo.jp/*"],
+        "js": ["normalize_ncnews.js"]
+    },
+    {
+        "matches": ["https://*.m.wikipedia.org/*"],
+        "js": ["normalize_wikipedia.js"]
+    },
+    {
+        "matches": ["https://pbs.twimg.com/media/*"],
+        "js": ["normalize_twitter_photo.js"]
+    },
+    {
+        "matches": ["https://pbs.twimg.com/profile_images/*"],
+        "js": ["normalize_twitter_icon.js"]
+    },
+    {
+        "matches": ["https://mobile.twitter.com/*"],
+        "js": ["normalize_twitter_mobile.js"]
+    },
+    {
+        "matches": ["https://dic.nicovideo.jp/*"],
+        "js": ["remove_query.js"]
+    },
+    {
+        "matches": ["https://oshiete.goo.ne.jp/*"],
+        "js": ["remove_query.js"]
+    },
+    {
+        "matches": ["http://blog.livedoor.jp/*"],
+        "js": ["remove_query.js"]
+    },
+    {
+        "matches": ["https://www.youtube.com/*"],
+        "js": ["remove_subquery.js"]
+    },
+    {
+        "matches": ["https://www.flickr.com/photos/*"],
+        "js": ["normalize_flickr.js"]
+    },
+    {
+        "matches": ["https://w.atwiki.jp/*/sp/*"],
+        "js": ["normalize_atwiki.js"]
+    }]
+}
