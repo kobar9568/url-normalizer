@@ -50,5 +50,17 @@
     {
         "matches": ["https://w.atwiki.jp/*/sp/*"],
         "js": ["normalize_atwiki.js"]
+    },
+    {
+        "matches": ["https://dic.nicovideo.jp/t/*"],
+        "js": ["normalize_nicodic.js"]
+    },
+    {
+        "matches": ["https://page.auctions.yahoo.co.jp/jp/auction/*"],
+        "js": ["normalize_yahoo_auctions.js"]
+    },
+    {
+        "matches": ["https://page.auctions.yahoo.co.jp/auction/*"],
+        "js": ["normalize_yahoo_auctions.js"]
     }]
 }
