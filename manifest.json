@@ -62,5 +62,9 @@
     {
         "matches": ["https://page.auctions.yahoo.co.jp/auction/*"],
         "js": ["normalize_yahoo_auctions.js"]
+    },
+    {
+        "matches": ["https://auctions.yahoo.co.jp/jp/auction/*"],
+        "js": ["normalize_yahoo_auctions.js"]
     }]
 }
