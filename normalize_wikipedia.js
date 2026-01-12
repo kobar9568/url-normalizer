@@ -31,9 +31,7 @@ function openNormalizedURL(url) {
         return null;
     }
 
-    window.open("https://" + LanguageCode + ".wikipedia.org/wiki/" + pageID, "_blank");
-
-    window.close()
+    window.open("https://" + LanguageCode + ".wikipedia.org/wiki/" + pageID, "_self");
 }
 
 

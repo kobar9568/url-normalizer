@@ -3,6 +3,12 @@
     "name": "URL Normalizer",
     "version": "0.1",
     "description": "Auto normalize dirty URL.",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "url-normalizer@kobar9568.github.io",
+            "strict_min_version": "109.0"
+        }
+    },
     "content_scripts": [{
         "matches": ["https://www.amazon.co.jp/*"],
         "js": ["normalize_amznjp.js"]

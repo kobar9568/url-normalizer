@@ -24,14 +24,12 @@ function openNormalizedURL() {
         return null;
     }
 
-    window.open('https://twitter.com' + path, '_blank');
-    window.close()
+    window.open('https://twitter.com' + path, '_self');
 }
 
 
 function openNormalizedSearch() {
-    window.open('https://twitter.com/search' + toQuery(), '_blank');
-    window.close()
+    window.open('https://twitter.com/search' + toQuery(), '_self');
 }
 
 

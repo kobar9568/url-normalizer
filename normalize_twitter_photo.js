@@ -17,8 +17,7 @@ function openNormalizedURL() {
         return null;
     }
     const fileName = toPhotoID() + '.' + inspectFileFormat() + ':orig';
-    window.open('https://pbs.twimg.com/media/' + fileName, '_blank');
-    window.close()
+    window.open('https://pbs.twimg.com/media/' + fileName, '_self');
 }
 
 
