@@ -74,6 +74,10 @@
         "js": ["normalize_yahoo_auctions.js"]
     },
     {
+        "matches": ["https://auctions.yahoo.co.jp/jp/show/bid_hist*"],
+        "js": ["normalize_yahoo_auctions.js"]
+    },
+    {
         "matches": ["https://archive.is/*"],
         "js": ["normalize_archive.js"]
     }]

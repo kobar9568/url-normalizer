@@ -18,7 +18,12 @@ function replaceNormalizedURL(url) {
     // This used to work before, but due to changes in Chrome's Same-Origin Policy, it no longer functions as expected.
     //history.replaceState('', '', toPageID(url));
 
-    window.location.replace(toPageID(url));
+    if (url.includes("bid_hist")) {
+        url = url.replace("auctions.yahoo.co.jp/jp/", "auctions.yahoo.co.jp/");
+        window.location.replace(url);
+    } else {
+        window.location.replace(toPageID(url));
+    }
 }
 
 
